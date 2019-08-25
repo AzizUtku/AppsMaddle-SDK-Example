@@ -8,7 +8,7 @@ Add the dependency in your (app-level) build.gradle
 
 ```gradle
 dependencies {
-	implementation 'com.appsmaddle.sdk:maddle:1.0.0'
+    implementation 'com.appsmaddle.sdk:maddle:1.0.0'
 }
 ```
 
