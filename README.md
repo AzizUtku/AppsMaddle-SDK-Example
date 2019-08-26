@@ -17,6 +17,7 @@ dependencies {
 ```java
 AppsMaddle.init(this, YOUR_API_KEY, YOUR_APP_KEY);
 ```
+Initializing is enough to get analytics from your app.
 
 ### Get your configs
 #### You can download your customized Config class from AppsMaddle dashboard.
