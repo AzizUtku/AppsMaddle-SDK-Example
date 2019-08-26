@@ -27,10 +27,10 @@ AppsMaddle.loadConfig(Config.class, new OnLoadListener<Config>() {
         mConfig = config;
 
         //Check flag is toggled
-        if(mConfig.details.show_message) {
+        if(mConfig.multilingual.show_message) {
             //Get other configs
-            String title = mConfig.details.message_title;
-            String description = mConfig.details.message_desc;
+            String title = mConfig.multilingual.message_title;
+            String description = mConfig.multilingual.message_desc;
             showAlertDialog(title, description);
         }
 
