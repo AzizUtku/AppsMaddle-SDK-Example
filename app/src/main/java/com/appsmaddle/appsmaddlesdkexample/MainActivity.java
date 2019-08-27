@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.appsmaddle.appsmaddlesdkexample.models.Config;
 import com.appsmaddle.sdk.AppsMaddle;
@@ -30,14 +31,13 @@ public class MainActivity extends AppCompatActivity {
                 mConfig = config;
 
                 //Check flag is toggled
-                if(mConfig.details.show_message) {
+                if(mConfig.multilingual.show_message) {
                     //Show alert dialog with loaded config.
-                    showAlertDialog(mConfig.details.message_title, mConfig.details.message_desc);
+                    showAlertDialog(mConfig.multilingual.message_title, mConfig.multilingual.message_desc);
                 }
 
             }
         });
-
     }
 
     private void showAlertDialog(String title, String message){

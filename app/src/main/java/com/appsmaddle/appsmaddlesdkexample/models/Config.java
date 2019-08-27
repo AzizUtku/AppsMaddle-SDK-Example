@@ -3,10 +3,9 @@ package com.appsmaddle.appsmaddlesdkexample.models;
 public class Config {
     public String version;
     public String url;
-    public String supported_langs;
-    public Details details;
+    public Multilingual multilingual;
 
-    public class Details {
+    public class Multilingual {
         public String locale;
         public boolean test;
         public boolean show_message;
@@ -15,7 +14,7 @@ public class Config {
 
         @Override
         public String toString() {
-            return "Details{" +
+            return "{" +
                     "locale='" + locale + '\'' +
                     ", test=" + test +
                     ", show_message=" + show_message +
@@ -30,8 +29,7 @@ public class Config {
         return "{" +
                 "version='" + version + '\'' +
                 ", url='" + url + '\'' +
-                ", supported_langs='" + supported_langs + '\'' +
-                ", details=" + details +
+                ", multilingual=" + multilingual +
                 '}';
     }
 }
